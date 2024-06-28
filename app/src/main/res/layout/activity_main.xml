@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/boton1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewTurn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Turno de Jugador"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:id="@+id/gridLayoutBoard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/button00"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:onClick="onCellClick"
+            android:text=""
+            android:textSize="24sp"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/button01"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:text=""
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:textSize="24sp"
+            android:onClick="onCellClick" />
+
+        <Button
+            android:id="@+id/button02"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:text=""
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:textSize="24sp"
+            android:onClick="onCellClick" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text=""
+            android:textSize="24sp"
+            android:onClick="onCellClick" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:onClick="onCellClick"
+            android:text=""
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:layout_margin="4dp"
+            android:text=""
+            android:textSize="24sp"
+            android:onClick="onCellClick" />
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text=""
+            android:textSize="24sp"
+            android:onClick="onCellClick" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            android:text=""
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:textSize="24sp"
+            android:onClick="onCellClick" />
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:layout_margin="4dp"
+            android:text=""
+            android:textSize="24sp"
+            android:onClick="onCellClick" />
+
+    </GridLayout>
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:onClick="resetGame"
+        android:text="Reiniciar Juego" />
+</LinearLayout>
+
